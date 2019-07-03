@@ -6,3 +6,22 @@
 
 // Bootstrap
 @import '~bootstrap/scss/bootstrap';
+
+// Ariel's Styles
+html, body {
+  background-color: $white-smoke;
+  color: $outer-space;
+}
+.content {
+  height: 100vh;
+  text-align: center;
+  margin: 0 5vw;
+}
+
+.title {
+  font-size: 50px;
+}
+
+.paragraph {
+  padding: 20px;
+}
