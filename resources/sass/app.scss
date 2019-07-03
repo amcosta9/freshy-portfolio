@@ -1,5 +1,6 @@
 // Fonts
 @import url('https://fonts.googleapis.com/css?family=Nunito');
+@import url('https://fonts.googleapis.com/css?family=Raleway|Roboto+Slab&display=swap');
 
 // Variables
 @import 'variables';
@@ -12,16 +13,64 @@ html, body {
   background-color: $white-smoke;
   color: $outer-space;
 }
+
 .content {
   height: 100vh;
   text-align: center;
   margin: 0 5vw;
-}
 
-.title {
-  font-size: 50px;
-}
+  nav {
+    font-family: 'Raleway', sans-serif;
 
-.paragraph {
-  padding: 20px;
+    a.navbar-brand, a.nav-link {
+      color: $outer-space;
+    }
+
+    a.navbar-brand:hover, a.nav-link:hover {
+      color: $chestnut;
+    }
+  }
+
+  .centered-container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -moz-transform: translateX(-50%) translateY(-50%);
+    -webkit-transform: translateX(-50%) translateY(-50%);
+    transform: translateX(-50%) translateY(-50%);
+    font-family: 'Raleway', sans-serif;
+
+    .hello {
+      font-size: 25px;
+    }
+
+    .ariel {
+      font-family: 'Roboto Slab', serif;
+      font-size: 99px;
+    }
+
+    .ariel:hover {
+      color: $light-salmon-pink;
+    }
+
+    .paragraph {
+      font-size: 20px;
+      margin-top: 50px;
+    }
+
+    .social {
+      margin-top: 50px;
+
+      ul {
+        li.social-link {
+          a {
+            .social-icon-img {
+              height: 50px;
+              margin: 0 20px;
+            }
+          }
+        }
+      }
+    }
+  }
 }
