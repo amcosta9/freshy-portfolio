@@ -13,7 +13,7 @@
 
 Route::get('/', 'HomePageController@hello');
 
-Auth::routes();
+Auth::routes(['register' => false]);
 
 Route::get('/home', 'HomeController@index')->name('home');
 Route::get('/create', 'HomeController@create')->name('create');
