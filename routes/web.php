@@ -11,4 +11,11 @@
 |
 */
 
-Route::get('/', 'HomePageController@home');
+Route::get('/', 'HomePageController@hello');
+
+Auth::routes();
+
+Route::get('/home', 'HomeController@index')->name('home');
+Route::get('/create', 'HomeController@create')->name('create');
+Route::post('/create', 'HomeController@store')->name('store');
+Route::get('/blog', 'HomeController@blog')->name('blog');
