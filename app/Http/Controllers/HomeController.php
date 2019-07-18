@@ -46,7 +46,7 @@ class HomeController extends Controller
 
     public function blog()
     {
-        $posts = Post::all();
+        $posts = Post::orderBy('created_at', 'desc')->get();
         return view('posts')->with(['posts' => $posts]);
     }
 }
