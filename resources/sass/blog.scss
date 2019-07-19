@@ -1,0 +1,20 @@
+@import 'variables';
+
+.blog-post {
+  margin: 0 10vw 30px;
+  background-color: unset;
+
+  .post-title {
+    font-size: 28px;
+    color: $chestnut;
+  }
+
+  .post-created-at {
+    font-size: 12px;
+  }
+
+  .card-content {
+    margin: 20px;
+    font-size: 14px;
+  }
+}

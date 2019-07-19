@@ -1,16 +1,12 @@
 <template>
-  <div class="row">
-    <div class="col-md-12">
-      <div class="card">
-        <div class="card-header">
-          {{ post.title }} - {{ post.created_at }}
-        </div>
-        <div class="card-content">
-          {{ post.body }}
-        </div>
+    <div class="blog-post card">
+      <div class="card-header roboto-slab">
+        <span class="post-title float-left">{{ post.title }}</span>
+        <span class="post-created-at float-right">Posted: {{ post.created_at }}</span>
+      </div>
+      <div class="card-content raleway" v-html="post.body">
       </div>
     </div>
-  </div>
 </template>
 
 <script>
@@ -35,11 +31,10 @@
     },
 
     mounted: function() {
-      console.log('Component mounted.')
     }
   }
 </script>
 
 <style lang="scss" scoped>
-  /*@import '../../sass/linc/variables/variables';*/
+  @import '../../sass/blog';
 </style>

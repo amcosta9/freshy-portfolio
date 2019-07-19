@@ -3,7 +3,7 @@
 @section('title', '{ A C }')
 
 @section('content')
-  <nav class="navbar navbar-expand-md">
+  <nav class="navbar navbar-expand-md raleway">
     <a class="navbar-brand" href="/">AC</a>
 
     <div class="navbar-collapse collapse">
@@ -15,10 +15,10 @@
     </div>
   </nav>
 
-  <div class="centered-container">
+  <div class="centered-container raleway">
     <section class="title">
       <span class="hello">Hello new friend,</span><br>
-      <span class="ariel">I'm Ariel.</span>
+      <span class="ariel roboto-slab">I'm Ariel.</span>
     </section>
 
     <section class="paragraph">

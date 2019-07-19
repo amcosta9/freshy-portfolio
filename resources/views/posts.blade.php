@@ -3,7 +3,7 @@
 @section('title', '{ A C } - Blog')
 
 @section('content')
-  <nav class="navbar navbar-expand-md">
+  <nav class="navbar navbar-expand-md raleway">
     <a class="navbar-brand" href="/">AC</a>
 
     <div class="navbar-collapse collapse">
