@@ -43,10 +43,4 @@ class HomeController extends Controller
 
         return redirect("/home");
     }
-
-    public function blog()
-    {
-        $posts = Post::orderBy('created_at', 'desc')->get();
-        return view('posts')->with(['posts' => $posts]);
-    }
 }
